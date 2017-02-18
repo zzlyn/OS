@@ -3,7 +3,8 @@
 
 Multi Thread APIs:   
   - thread.c / thread.h
-  - Contains thread and concurrency control apis
+  - Built with basic linux system calls like interrupt handling & CPU/Reg operations
+  - Contains thread and concurrency control APIs
   - thread_yield, thread_create, thread_kill etc.
   - Conditional variables (cv) methods
     
