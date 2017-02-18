@@ -1,5 +1,4 @@
-# OS
-# Projects related to Operating Systems
+# OS - Some projects related to Operating Systems
 
 
 Multi Thread APIs:   
