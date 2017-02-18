@@ -354,26 +354,6 @@ int evict(struct htb * hta) {
     hta->h_table[current->position] = NULL;
     return 1;
 
-    /*
-        int finally = 0;
-        struct node* evicted = find_last();
-
-
-
-        while (finally == 0) {
-
-            if (hta->h_table[evicted->position]->ref > 0) {
-                finally = 1;
-            } else {
-                deleteFirst();
-                hta->current_size = hta->current_size - hta->h_table[evicted->position]->_data->file_size;
-                file_data_free(hta->h_table[evicted->position]->_data);
-                hta->h_table[evicted->position] = NULL;
-                finally = 1;
-            }
-
-        }
-     */
 }
 
 
@@ -476,13 +456,7 @@ void *thread_do(void* vp) {
         pthread_mutex_unlock(bf_lock);
 
         do_server_request(sv, num);
-        //pthread_mutex_lock(bf_lock);
 
-
-        //if (firsttime == 0) {
-        //    pthread_mutex_unlock(bf_lock);
-        //}
-        //firsttime = 1;
 
     }
 
